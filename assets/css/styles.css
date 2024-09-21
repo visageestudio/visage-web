@@ -7,6 +7,19 @@ body {
   height: 100%;
   font-family: "Inter Tight", sans-serif;
   background-color: var(--bs-emphasis-color);
+	animation: fadeInAnimation ease 1.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+			opacity: 0;
+	}
+	
+	100% {
+			opacity: 1;
+	}
 }
 
 .container {
