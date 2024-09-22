@@ -7,7 +7,7 @@ body {
   height: 100%;
   font-family: "Inter Tight", sans-serif;
   background-color: var(--bs-emphasis-color);
-	animation: fadeInAnimation ease 1.5s;
+  animation: fadeInAnimation ease 3s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
@@ -140,14 +140,14 @@ header .container {
 
 @media (max-width: 768px) {
   .sized {
-    font-size: 65px;
+    font-size: 60px;
     line-height: 65px;
   }
 }
 
 @media (max-width: 576px) {
   .sized {
-    font-size: 56px;
+    font-size: 50px;
     line-height: 60px;
   }
 }

@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight&amp;display=swap">
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Lenis -->
+    <script src="assets/js/lenis.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
 </head>
 
 <body class="bg-black" oncontextmenu="return false;">
@@ -396,6 +399,20 @@
             // Write current year in copyright text.
             document.querySelector(".copyright-year").textContent = new Date().getFullYear();
         });
+    </script>
+    <script>
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+        console.log(e)
+        })
+
+        function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
     </script>
 </body>
 
